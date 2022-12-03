@@ -7,7 +7,7 @@
     <meta name="description" content="Первая верстка страницы">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Окна хаус</title>
 </head>
@@ -30,8 +30,37 @@
 
     <main>
         <div class="title-container">
-            <div class="title-container-background1"></div>
-            <div class="title-container-background2"></div>
+            <div class="title-background-container">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="title-wraper">
+                <h1><span>Окна Хаус -</span>Профессиональный подход к остеклению</h1>
+                <div class="advantages-container">
+                    <div>
+                        <img src="./img/icon-item1.png" alt="">
+                        <p>Современные окна и балконные конструкции по доступным ценам</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-item2.png" alt="">
+                        <p>Квалифицированный подход к решению задач любой сложности</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-item3.png" alt="">
+                        <p>Гарантия высочайшего качества нашей продукции</p>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <h2>Вызвать замерщика на дом</h2>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                <input type="text" id="phone" name="phone" placeholder="Номер телефона">
+                <input type="text" id="email" name="email" placeholder="E-mail">
+                <input type="checkbox" id="accept" name="accept" class="form-checkbox">
+                    <label for="accept">Согласен на обработку персональных данных в соответствии с <a href="" target="_blank">политикой конфиденциальности</a></label>
+                <button><span>Отправить заявку</span></button>
+                <img src="./img/title-form-messure.png" alt="">
+            </form>
         </div>
     </main>
 </body>
