@@ -21,6 +21,8 @@ header {
 
 header img {
     margin: 17px 0;
+
+    width: 90px;
 }
 
 header ul {
@@ -124,6 +126,8 @@ header button:nth-of-type(2):active {
 
 header button img {
     margin: 0;
+
+    width: auto;
 }
 
 header button:nth-of-type(1):hover img {
@@ -458,3 +462,104 @@ section {
     line-height: 19px;
     color: #2f2f51;
 }
+
+.about-company-container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    width: 1200px;
+    height: 650px;
+
+    overflow: hidden;
+}
+
+.about-company-container h1 {
+    margin: 65px auto 32px;
+
+    width: 100%;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2f2f51;
+}
+
+.about-company-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+
+    width: 650px;
+
+    border-radius: 3px;
+    list-style-type: none;
+}
+
+.about-company-container input+label {
+    padding: 10px 25px;
+
+    background-color: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2f2f51;
+    transition: 0.2s;
+}
+
+.about-company-container input:checked+label {
+    font-weight: 700;
+    color: #ffffff;
+    background: #ef7f04;
+}
+
+.about-company-container ul input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+
+    width: 0;
+    height: 0;
+}
+
+.about-company-container div {
+    position: absolute;
+    top: 190px;
+    left: 0;
+
+    width: 100%;
+    height: 460px;
+    background: url(./img/logo.png) 50px 50px / auto 140px no-repeat, url(./img/about-company-background.png) right / auto 460px no-repeat, white;
+    opacity: 0;
+}
+
+.about-company-container p {
+    margin: 250px 0 0 250px;
+
+    width: 305px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.about-company-container input:checked~div {
+    opacity: 1;
+}
+
+
+/* Пока не придумал как это правильно реализовать
+.about-company-container>div {
+    z-index: -1;
+    opacity: 1;
+} */
