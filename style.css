@@ -526,9 +526,12 @@ section {
     position: absolute;
     margin: 0;
     padding: 0;
+    z-index: -1;
 
     width: 0;
     height: 0;
+
+    border: 0 solid transparent;
 }
 
 .about-company-container div {
@@ -539,6 +542,7 @@ section {
     width: 100%;
     height: 460px;
     background: url(./img/logo.png) 50px 50px / auto 140px no-repeat, url(./img/about-company-background.png) right / auto 460px no-repeat, white;
+    border-radius: 3px;
     opacity: 0;
 }
 
