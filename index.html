@@ -7,7 +7,7 @@
     <meta name="description" content="Первая верстка страницы">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Окна хаус</title>
 </head>
@@ -27,6 +27,95 @@
         <button><img src="./img/icon-meas.png" alt=""><span class="button-measure">Заявка на замер</span></button>
         <button><img src="./img/icon-calc.png" alt=""><span class="button-calculate">Заказать расчёт</span></button>
     </header>
-    
+
+    <main>
+        <section class="title-container">
+            <div class="title-background-container">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="title-wrapper">
+                <h1><span>Окна Хаус -</span>Профессиональный подход к остеклению</h1>
+                <div class="advantages-container">
+                    <div>
+                        <img src="./img/icon-item1.png" alt="">
+                        <p>Современные окна и балконные конструкции по доступным ценам</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-item2.png" alt="">
+                        <p>Квалифицированный подход к решению задач любой сложности</p>
+                    </div>
+                    <div>
+                        <img src="./img/icon-item3.png" alt="">
+                        <p>Гарантия высочайшего качества нашей продукции</p>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <h2>Вызвать замерщика на дом</h2>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+                <input type="text" id="phone" name="phone" placeholder="Номер телефона">
+                <input type="text" id="email" name="email" placeholder="E-mail">
+                <input type="checkbox" id="accept" name="accept" class="form-checkbox">
+                    <label for="accept">Согласен на обработку персональных данных в соответствии с <a href="" target="_blank">политикой конфиденциальности</a></label>
+                <button><span>Отправить заявку</span></button>
+                <img src="./img/title-form-messure.png" alt="">
+            </form>
+        </section>
+        <section class="services-container">
+            <h1>Наши услуги</h1>
+            <div class="service-wrapper">
+                <img src="./img/services-icon1.svg" alt="">
+                <h2>Установка пластиковых окон</h2>
+                <p>Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества</p>
+            </div>
+            <div class="service-wrapper">
+                <img src="./img/services-icon2.svg" alt="">
+                <h2>Остекление балконов и лоджий</h2>
+                <p>Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
+            </div>
+            <div class="service-wrapper">
+                <img src="./img/services-icon3.svg" alt="">
+                <h2>Остекление коттеджей и дач</h2>
+                <p>Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект</p>
+            </div>
+            <div class="service-wrapper">
+                <img src="./img/services-icon4.svg" alt="">
+                <h2>Остекление корпоративных объектов</h2>
+                <p>Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов</p>
+            </div>
+        </section>
+        <section class="about-company-container">
+            <h1>О компании</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <input type="radio" name="about-company__radio" id="js-descriprion" checked>
+                        <label for="js-descriprion">Описание</label>
+                        <div><p>Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p></div>
+                    </li>
+                    <li>
+                        <input type="radio" name="about-company__radio" id="js-work">
+                        <label for="js-work">Как мы работаем</label>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo beatae hic optio deleniti! Facilis cupiditate unde asperiores suscipit deserunt, quae sunt iusto fugiat corrupti cumque soluta quidem quo fuga.</p></div>
+                    </li>
+                    <li>
+                        <input type="radio" name="about-company__radio" id="js-reviews">
+                        <label for="js-reviews">Отзывы</label>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae reprehenderit aliquam ipsa enim quis nihil quisquam id. Quam eveniet natus repudiandae hic voluptates similique cumque repellat dolore quis possimus?</p></div>
+                    </li>
+                    <li>
+                        <input type="radio" name="about-company__radio" id="js-sertifications">
+                        <label for="js-sertifications">Сертификаты</label>
+                        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid officiis provident velit cupiditate magnam culpa eum cumque deserunt odit dignissimos dicta sed minima porro voluptatum fuga nulla, sint qui natus.</p></div>
+                    </li>
+                </ul>
+            </nav>
+
+            
+            <!-- Пока не придумал как это правильно реализовать
+            <div aria-hidden="true"><p>Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p></div> -->
+        </section>
+    </main>
 </body>
 </html>
