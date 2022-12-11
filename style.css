@@ -567,3 +567,9 @@ section {
     z-index: -1;
     opacity: 1;
 } */
+
+.test {
+    background-color: black;
+    border-radius: 100px;
+    overflow: hidden;
+}

@@ -8,24 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Окна хаус</title>
 </head>
 <body>
-    <header>
-        <a href="/"><img src="./img/logo.png" alt="Логотип компании Окна Хаус."></a>
+    <header class="header">
+        <a href="/" class="header__logo-link"><img src="./img/logo.png" alt="Логотип компании Окна Хаус." class="header__logo"></a>
         <nav>
-            <ul>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Портфолио</a></li>
-                <li><a href="#">Вопрос-ответ</a></li>
-                <li><a href="#">Контакты</a></li>
+            <ul class="header__list">
+                <li class="header__list-item"><a href="#" class="header__link">Услуги</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">Продукция</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">О компании</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">Портфолио</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">Вопрос-ответ</a></li>
+                <li class="header__list-item"><a href="#" class="header__link">Контакты</a></li>
             </ul>
         </nav>
-        <button><img src="./img/icon-meas.png" alt=""><span class="button-measure">Заявка на замер</span></button>
-        <button><img src="./img/icon-calc.png" alt=""><span class="button-calculate">Заказать расчёт</span></button>
+        <div class="button-container">
+            <button class="button"><img src="./img/button/icon-measure.svg" alt="" class="button__icon"><span class="button-measure">Заявка на замер</span></button>
+            <button class="button button_blue"><img src="./img/button/icon-calculate.svg" alt="" class="button__icon"><span class="button-calculate">Заказать расчёт</span></button>
+        </div>
     </header>
 
     <main>
@@ -117,5 +123,6 @@
             <div aria-hidden="true"><p>Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p></div> -->
         </section>
     </main>
+    <div class="test"><img src="./img/service-background1.png" alt=""></div>
 </body>
 </html>
