@@ -36,10 +36,10 @@
   filter: none;
 }
 
-.button_blue {
+.button_color_blue {
   background: #424268;
   border: 2px solid #424268;
 }
-.button_blue:active, .button_blue :active:hover {
+.button_color_blue:active, .button_color_blue :active:hover {
   color: #424268;
-}/*# sourceMappingURL=button.css.map */
+}
