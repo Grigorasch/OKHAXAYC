@@ -6,7 +6,7 @@
   font-family: "Roboto", Arial, sans-serif;
 }
 
-.title-container {
+.title {
   position: relative;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
   width: 100%;
   height: 560px;
 }
-.title-container__background {
+.title__background {
   position: absolute;
   top: 0;
   display: flex;
@@ -24,14 +24,14 @@
   width: 100%;
   height: 560px;
 }
-.title-container__background-item:nth-child(1) {
+.title__background-item:nth-child(1) {
   flex-shrink: 0;
   width: 1219px;
   height: 562px;
   background: url("/img/main/title/title-container-background1.png"), #333349;
   background-blend-mode: multiply;
 }
-.title-container__background-item:nth-child(2) {
+.title__background-item:nth-child(2) {
   position: relative;
   flex-shrink: 0;
   width: 702px;
@@ -39,7 +39,7 @@
   background: url("/img/main/title/title-container-background2.png"), #333349;
   background-blend-mode: multiply;
 }
-.title-container__background-item:nth-child(2)::before {
+.title__background-item:nth-child(2)::before {
   content: "";
   position: absolute;
   top: 0;

@@ -1,6 +1,6 @@
 $main-color: #ef7f04;
 
-.advanteges-wrapper {
+.advanteges {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ $main-color: #ef7f04;
         }
     }
 
-    &__container {
+    &__wrapper {
         display: flex;
     }
 
