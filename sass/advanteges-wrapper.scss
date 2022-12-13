@@ -1,0 +1,48 @@
+$main-color: #ef7f04;
+
+.advanteges-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+    width: 625px;
+
+    &__heading {
+        margin-bottom: 20px;
+        width: 460px;
+
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 42.19px;
+        color: white;
+
+        &-brand {
+            display: block;
+
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28.13px;
+            color: $main-color;
+        }
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__card {
+        margin-right: 30px;
+        width: 175px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: white;
+
+        &-image {
+            position: relative;
+            left: -15px;
+        }
+    }
+}
