@@ -1,0 +1,58 @@
+$main-color: #ef7f04;
+$second-color: #424268;
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 170px;
+    height: 40px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    transition: 0.2s;
+    background: $main-color;
+    border: 2px solid $main-color {
+        radius: 3px;
+    }
+
+    font: {
+        weight: 700;
+        size: 13px;
+    }
+    line-height: 15px;
+    color: #ffffff;
+
+    &__icon {
+        filter: url(/img/button/filter.svg#makeMeWhite);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active, :active:hover {
+        background: #ffffff;
+        color: $main-color;
+
+        & .button__icon {
+            filter: none;
+        }
+    }
+}
+
+.button_color_blue {
+    background: $second-color;
+    border: 2px solid $second-color;
+
+    &:active, :active:hover {
+        color: $second-color;
+    }
+}

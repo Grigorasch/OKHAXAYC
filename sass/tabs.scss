@@ -1,0 +1,92 @@
+.tabs {
+    position: relative;
+    margin-bottom: 35px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin: 10px 0;
+        // padding: 0;
+    
+        width: 650px;
+    
+        border-radius: 3px;
+        list-style-type: none;
+
+        
+    }
+
+    &__radio {
+        z-index: -1;
+        margin: 0;
+        padding: 0;
+
+        width: 0;
+        height: 0;
+
+        &_checked {
+            &:checked+.tabs__label {
+                font-weight: 700;
+                color: #ffffff;
+                background: #ef7f04;
+            }
+
+            &:checked~.tabs__description {
+                opacity: 1;
+            }
+        }
+
+        &_focused {
+            &:focus-visible {
+                outline: none;
+            }
+
+            &:focus-visible+.tabs__label {
+                outline: 2px solid black;
+            }
+        }
+    }
+
+    &__label {
+        // box-sizing: border-box;
+        padding: 8px 25px;
+        cursor: pointer;
+
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #2f2f51;
+        transition: 0.2s;
+
+        &_hover {
+            &:hover {
+                // font-weight: 700;
+                color: #ffffff;
+                background: #ef7f04;
+            }
+        }
+    }
+
+    &__description {
+        position: absolute;
+        top: 305px;
+        left: -25px;
+
+        width: 305px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        opacity: 0;
+    }
+
+    &__display {
+        width: 100%;
+        height: 460px;
+        background: url(/img/logo.png) 50px 50px / auto 140px no-repeat, url(/img/main/about/about-background.png) right / auto 460px no-repeat, white;
+        border-radius: 3px;
+    }
+}

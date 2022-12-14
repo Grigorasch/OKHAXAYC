@@ -1,0 +1,90 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 43px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 430px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.form__heading {
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2f2f51;
+}
+.form__input {
+  margin-bottom: 15px;
+  width: 320px;
+  height: 40px;
+  background: #e2e2e2;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #424268;
+  text-indent: 16px;
+}
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+}
+.form__checkbox-label {
+  position: relative;
+  display: block;
+  margin: 0 40px 25px 75px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+.form__checkbox-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background: #E2E2E2;
+  border-radius: 3px;
+}
+.form__checkbox-label::after {
+  content: url(/img/form/form__checkbox_checked.svg);
+  position: absolute;
+  opacity: 0;
+  left: -30px;
+  top: -2px;
+  width: 25px;
+  height: 25px;
+  transition: 0.1s;
+}
+.form__checkbox_checked:checked + .form__checkbox-label::after {
+  opacity: 1;
+}
+.form__checkbox_focused:focus-visible {
+  outline: none;
+}
+.form__checkbox_focused:focus-visible + .form__checkbox-label::before {
+  outline: 2px solid black;
+}
+.form_button {
+  z-index: 1;
+  width: 200px;
+  height: 55px;
+}
+.form__link {
+  text-decoration: none;
+  color: #4b67af;
+}
+.form__decoration {
+  position: absolute;
+  bottom: -55px;
+  left: -88px;
+}
