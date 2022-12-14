@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/advanteges.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/tabs.css">
     <title>Окна хаус</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             <ul class="header__list">
                 <li class="header__list-item"><a href="#services" class="header__link">Услуги</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Продукция</a></li>
-                <li class="header__list-item"><a href="#" class="header__link">О компании</a></li>
+                <li class="header__list-item"><a href="#about" class="header__link">О компании</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Портфолио</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Вопрос-ответ</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Контакты</a></li>
@@ -61,10 +62,10 @@
             </div>
             <form action="" class="form">
                 <h2 class="form__heading">Вызвать замерщика на дом</h2>
-                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input">
-                <input type="text" id="phone" name="phone" placeholder="Номер телефона" class="form__input">
-                <input type="text" id="email" name="email" placeholder="E-mail" class="form__input">
-                <input type="checkbox" id="accept" name="accept" class="form__checkbox form__checkbox_checked form__checkbox_focused">
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input" pattern="[А-Яа-я]+" required>
+                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" class="form__input" pattern="(\+7|8)9\d{9}" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" class="form__input" required>
+                <input type="checkbox" id="accept" name="accept" class="form__checkbox form__checkbox_checked form__checkbox_focused" required>
                 <label for="accept" class="form__checkbox-label">Согласен на обработку персональных данных в соответствии с <a href="" target="_blank" class="form__link">политикой конфиденциальности</a></label>
                 <button class="button form_button"><span>Отправить заявку</span></button>
                 <img src="./img/form/title-form-messure.png" alt="" class="form__decoration">
@@ -72,61 +73,57 @@
         </section>
         <section class="main-wrapper" id="services">
             <h1 class="main-wrapper__heading">Наши услуги</h1>
-            <div class="services-container">
-                <div class="services-container__card services-container__card_background1">
-                    <img src="./img/main/services/services-icon1.svg" alt="" class="services-container__card-image">
-                    <h2 class="services-container__card-heading">Установка пластиковых окон</h2>
-                    <p class="services-container__card-paragraph">Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества</p>
+            <div class="services">
+                <div class="services__card services__card_background1 services__card_hover">
+                    <img src="./img/main/services/services-icon1.svg" alt="" class="services__card-image">
+                    <h2 class="services__card-heading">Установка пластиковых окон</h2>
+                    <p class="services__card-paragraph">Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества</p>
                 </div>
-                <div class="services-container__card services-container__card_background2">
-                    <img src="./img/main/services/services-icon2.svg" alt="" class="services-container__card-image">
-                    <h2 class="services-container__card-heading">Остекление балконов и лоджий</h2>
-                    <p class="services-container__card-paragraph">Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
+                <div class="services__card services__card_background2 services__card_hover">
+                    <img src="./img/main/services/services-icon2.svg" alt="" class="services__card-image">
+                    <h2 class="services__card-heading">Остекление балконов и лоджий</h2>
+                    <p class="services__card-paragraph">Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты</p>
                 </div>
-                <div class="services-container__card services-container__card_background3">
-                    <img src="./img/main/services/services-icon3.svg" alt="" class="services-container__card-image">
-                    <h2 class="services-container__card-heading">Остекление коттеджей и дач</h2>
-                    <p class="services-container__card-paragraph">Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект</p>
+                <div class="services__card services__card_background3 services__card_hover">
+                    <img src="./img/main/services/services-icon3.svg" alt="" class="services__card-image">
+                    <h2 class="services__card-heading">Остекление коттеджей и дач</h2>
+                    <p class="services__card-paragraph">Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект</p>
                 </div>
-                <div class="services-container__card services-container__card_background4">
-                    <img src="./img/main/services/services-icon4.svg" alt="" class="services-container__card-image">
-                    <h2 class="services-container__card-heading services-container__card_heading_l">Остекление корпоративных объектов</h2>
-                    <p class="services-container__card-paragraph">Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов</p>
+                <div class="services__card services__card_background4 services__card_hover">
+                    <img src="./img/main/services/services-icon4.svg" alt="" class="services__card-image">
+                    <h2 class="services__card-heading services__card_heading_l">Остекление корпоративных объектов</h2>
+                    <p class="services__card-paragraph">Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов</p>
                 </div>
             </div>
         </section>
-        <section class="main-wrapper">
+        <section class="main-wrapper" id="about">
             <h1 class="main-wrapper__heading">О компании</h1>
-            <nav>
-                <ul>
+            <nav class="tabs">
+                <ul class="tabs__list">
                     <li>
-                        <input type="radio" name="about-company__radio" id="js-descriprion" checked>
-                        <label for="js-descriprion">Описание</label>
-                        <div><p>Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p></div>
+                        <input type="radio" name="about-company__radio" id="js-descriprion" class="tabs__radio tabs__radio_checked tabs__radio_focused" checked>
+                        <label for="js-descriprion" class="tabs__label tabs__label_hover">Описание</label>
+                        <p class="tabs__description">Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p>
                     </li>
                     <li>
-                        <input type="radio" name="about-company__radio" id="js-work">
-                        <label for="js-work">Как мы работаем</label>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo beatae hic optio deleniti! Facilis cupiditate unde asperiores suscipit deserunt, quae sunt iusto fugiat corrupti cumque soluta quidem quo fuga.</p></div>
+                        <input type="radio" name="about-company__radio" id="js-work" class="tabs__radio tabs__radio_checked tabs__radio_focused">
+                        <label for="js-work" class="tabs__label tabs__label_hover">Как мы работаем</label>
+                        <p class="tabs__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo beatae hic optio deleniti! Facilis cupiditate unde asperiores suscipit deserunt, quae sunt iusto fugiat corrupti cumque soluta quidem quo fuga.</p>
                     </li>
                     <li>
-                        <input type="radio" name="about-company__radio" id="js-reviews">
-                        <label for="js-reviews">Отзывы</label>
-                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae reprehenderit aliquam ipsa enim quis nihil quisquam id. Quam eveniet natus repudiandae hic voluptates similique cumque repellat dolore quis possimus?</p></div>
+                        <input type="radio" name="about-company__radio" id="js-reviews" class="tabs__radio tabs__radio_checked tabs__radio_focused">
+                        <label for="js-reviews" class="tabs__label tabs__label_hover">Отзывы</label>
+                        <p class="tabs__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae reprehenderit aliquam ipsa enim quis nihil quisquam id. Quam eveniet natus repudiandae hic voluptates similique cumque repellat dolore quis possimus?</p>
                     </li>
                     <li>
-                        <input type="radio" name="about-company__radio" id="js-sertifications">
-                        <label for="js-sertifications">Сертификаты</label>
-                        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid officiis provident velit cupiditate magnam culpa eum cumque deserunt odit dignissimos dicta sed minima porro voluptatum fuga nulla, sint qui natus.</p></div>
+                        <input type="radio" name="about-company__radio" id="js-sertifications" class="tabs__radio tabs__radio_checked tabs__radio_focused">
+                        <label for="js-sertifications" class="tabs__label tabs__label_hover">Сертификаты</label>
+                        <p class="tabs__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid officiis provident velit cupiditate magnam culpa eum cumque deserunt odit dignissimos dicta sed minima porro voluptatum fuga nulla, sint qui natus.</p>
                     </li>
                 </ul>
             </nav>
-
-            
-            <!-- Пока не придумал как это правильно реализовать
-            <div aria-hidden="true"><p>Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали правильный выбор.</p></div> -->
+            <div class="tabs__display"></div>
         </section>
     </main>
-    <div class="test"><img src="./img/service-background1.png" alt=""></div>
 </body>
 </html>
