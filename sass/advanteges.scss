@@ -43,6 +43,73 @@ $main-color: #ef7f04;
         &-image {
             position: relative;
             left: -15px;
+            flex-basis: 100px;
         }
+    }
+}
+
+.advantages-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    padding: 65px 0 55px 20px;
+
+    width: 100%;
+
+    &__card {
+        display: flex;
+
+        width: 33%;
+        height: 115px;
+    }
+
+    &__image {
+        flex-basis: 150px;
+        margin-top: 10px;
+    }
+
+    &__wrapper {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        line-height: 36px;
+        color: #2f2f51;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    &_image_size1 {
+        height: 81px;
+    }
+
+    &_image_size2 {
+        height: 96px;
+    }
+    
+    &_image_size3 {
+        height: 84px;
+    }
+    
+    &_image_size4 {
+        height: 101px;
+    }
+
+    &__button {
+        margin-bottom: 87px;
+        
+        width: 310px;
+        height: 55px;
+
+        font-size: 16px;
+        line-height: 19px;
     }
 }
