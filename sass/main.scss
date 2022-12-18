@@ -77,7 +77,7 @@ $main-color: #ef7f04;
     width: 1200px;
 
     &__heading {
-        padding-bottom: 45px;
+        margin-bottom: 45px;
 
         text-align: center;
         font-weight: 700;
@@ -85,86 +85,46 @@ $main-color: #ef7f04;
         line-height: 28px;
         color: #2f2f51;
     }
-}
 
-.services {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    &_portfolio {
+        padding-top: 48px;
 
-    &__card {
-        display: flex;
-        align-items: center;
-        align-content: start;
-        flex-wrap: wrap;
-        row-gap: 30px;
-        box-sizing: border-box;
-        padding: 50px 0 0 50px;
-
-        width: 595px;
-        height: 270px;
-
+        background: #ffffff;
         border-radius: 3px;
-        transition: 1s;
-
-        &-image {
-            margin-right: 25px;
-        }
-
-        &-heading {
-            width: 255px;
-
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 28px;
-            color: #2f2f51;
-        }
-
-        &_heading_l {
-            width: 300px;
-        }
-
-        &-paragraph {
-            width: 300px;
-
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #2f2f51;
-        }
-
-        &_background1 {
-            background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/main/services/service-background1.png);
-            background-size: 101%;
-            background-repeat: no-repeat;
-        }
-
-        &_background2 {
-            background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/main/services/service-background22.png);
-            background-size: 101%;
-            background-repeat: no-repeat;
-            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-        }
-
-        &_background3 {
-            background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/main/services/service-background3.png);
-            background-size: 101%;
-            background-repeat: no-repeat;
-        }
-
-        &_background4 {
-            background: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/main/services/service-background4.png);
-            background-size: 101%;
-            background-repeat: no-repeat;
-        }
-
-        &_hover {
-            &:hover {
-                background-size: 110%;
-                background-position-y: 30%;
-            }
-        }
     }
 
+    &_answer {
+        padding-top: 40px;
+
+        background: $main-color;
+        border-radius: 3px;
+
+        & .main-wrapper__heading {
+            margin-bottom: 50px;
+
+            color: #ffffff;
+        }
+    }
+}
+
+.portfolio {
+    &__galery {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 70px;
+
+        width: 1000px;
+    }
+
+    &__image {
+        width: 215px;
+        height: 215px;
+
+        border-radius: 3px;
+    }
+
+    &_image-size_stretching {
+        object-fit: none;
+        object-position: -15px -10px;
+    }
 }

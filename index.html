@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/advanteges.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/tabs.css">
+    <link rel="stylesheet" href="./css/services.css">
     <title>Окна хаус</title>
 </head>
 <body>
@@ -32,8 +33,10 @@
             </ul>
         </nav>
         <div class="button-container">
-            <button class="button"><img src="./img/button/icon-measure.svg" alt="" class="button__icon"><span class="button-measure">Заявка на замер</span></button>
-            <button class="button button_color_blue"><img src="./img/button/icon-calculate.svg" alt="" class="button__icon"><span class="button-calculate">Заказать расчёт</span></button>
+            <button class="button"><img src="./img/button/icon-measure.svg" alt="" class="button__icon">
+            Заявка на замер</button>
+            <button class="button button_color_blue"><img src="./img/button/icon-calculate.svg" alt="" class="button__icon">
+            Заказать расчёт</button>
         </div>
     </header>
 
@@ -62,15 +65,17 @@
             </div>
             <form action="" class="form">
                 <h2 class="form__heading">Вызвать замерщика на дом</h2>
-                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input" pattern="[А-Яа-я]+" required>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input" pattern="[А-Яа-яЁё]+" required>
                 <input type="tel" id="phone" name="phone" placeholder="Номер телефона" class="form__input" pattern="(\+7|8)9\d{9}" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" class="form__input" required>
                 <input type="checkbox" id="accept" name="accept" class="form__checkbox form__checkbox_checked form__checkbox_focused" required>
                 <label for="accept" class="form__checkbox-label">Согласен на обработку персональных данных в соответствии с <a href="" target="_blank" class="form__link">политикой конфиденциальности</a></label>
-                <button class="button form_button"><span>Отправить заявку</span></button>
+                <button class="button form_button">
+                    Отправить заявку</button>
                 <img src="./img/form/title-form-messure.png" alt="" class="form__decoration">
             </form>
         </section>
+
         <section class="main-wrapper" id="services">
             <h1 class="main-wrapper__heading">Наши услуги</h1>
             <div class="services">
@@ -96,6 +101,7 @@
                 </div>
             </div>
         </section>
+
         <section class="main-wrapper" id="about">
             <h1 class="main-wrapper__heading">О компании</h1>
             <nav class="tabs">
@@ -123,6 +129,76 @@
                 </ul>
             </nav>
             <div class="tabs__display"></div>
+            <div class="advantages-block">
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon1.svg" alt="" class="advantages-block__image advantages-block_image_size1">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Профессионализм</h2>
+                        <p class="advantages-block__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+                    </div>
+                </div>
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon2.svg" alt="" class="advantages-block__image advantages-block_image_size1">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Ценообразование</h2>
+                        <p class="advantages-block__description">Лучшие цены на рынке пластиковых окон</p>
+                    </div>
+                </div>
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon3.svg" alt="" class="advantages-block__image advantages-block_image_size2">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Мобильность</h2>
+                        <p class="advantages-block__description">Заключение договора на дому</p>
+                    </div>
+                </div>
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon4.svg" alt="" class="advantages-block__image advantages-block_image_size3">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Лояльность</h2>
+                        <p class="advantages-block__description">99% клиентов рекомендуют нас своим друзьям</p>
+                    </div>
+                </div>
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon5.svg" alt="" class="advantages-block__image advantages-block_image_size3">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Скорость</h2>
+                        <p class="advantages-block__description">Короткие сроки установки изделий</p>
+                    </div>
+                </div>
+                <div class="advantages-block__card">
+                    <img src="./img/main/about/advantages-icon6.svg" alt="" class="advantages-block__image advantages-block_image_size4">
+                    <div class="advantages-block__wrapper">
+                        <h2 class="advantages-block__heading">Служба качества</h2>
+                        <p class="advantages-block__description">Безупречное качество и контроль изделий ПВХ</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button advantages-block__button">
+                <img src="./img/button/icon-measure.svg" alt="" class="button__icon">
+                Оформить заявку на замер
+            </button>
+        </section>
+
+        <section class="main-wrapper main-wrapper_portfolio">
+            <h1 class="main-wrapper__heading">Портфолио</h1>
+            <div class="portfolio__galery">
+                <img src="/img/main/portfolio/portfolio-image1.png" alt="Пример остекления комнаты" class="portfolio__image">
+                <img src="/img/main/portfolio/portfolio-image2.png" alt="Пример остекления комнаты" class="portfolio__image portfolio_image-size_stretching">
+                <img src="/img/main/portfolio/portfolio-image3.png" alt="Пример остекления комнаты" class="portfolio__image">
+                <img src="/img/main/portfolio/portfolio-image4.png" alt="Пример остекления комнаты" class="portfolio__image">
+            </div>
+        </section>
+
+        <section class="main-wrapper main-wrapper_answer">
+            <h1 class="main-wrapper__heading">Вопрос-ответ</h1>
+            <select>
+                <option value="">Сколько по времени занимает изготовление пластиковых окон?</option>
+                <option value="">Какие существуют способы оплаты?</option>
+                <option value="">Где я могу посмотреть образцы?</option>
+                <option value="">Зачем вызывать замерщика? Я могу дать размеры</option>
+                <option value="">Хотелось бы отделать балкон. Поможете?</option>
+                <option value="">Мне надо нанимать грузчиков для подъема?</option>
+            </select>
         </section>
     </main>
 </body>

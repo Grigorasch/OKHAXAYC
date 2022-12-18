@@ -23,7 +23,7 @@
   background: #ef7f04;
 }
 .tabs__radio_checked:checked ~ .tabs__description {
-  opacity: 1;
+  display: block;
 }
 .tabs__radio_focused:focus-visible {
   outline: none;
@@ -54,7 +54,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  opacity: 0;
+  display: none;
 }
 .tabs__display {
   width: 100%;
