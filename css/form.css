@@ -88,3 +88,9 @@
   bottom: -55px;
   left: -88px;
 }
+
+@media (max-width: 1200px) {
+  .form {
+    display: none;
+  }
+}

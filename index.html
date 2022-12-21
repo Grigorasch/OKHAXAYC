@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/button.css">
@@ -17,12 +16,19 @@
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/tabs.css">
     <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/details.css">
     <title>Окна хаус</title>
 </head>
 <body>
     <header class="header">
+        <input type="checkbox" class="header__burger" role="menu" id="burger-menu">
+        <label for="burger-menu" class="header__burger-button">
+            <span class="header__burger-icon"></span>
+        </label>
+
         <a href="/" class="header__logo-link"><img src="./img/logo.png" alt="Логотип компании Окна Хаус." class="header__logo"></a>
-        <nav>
+
+        <nav class="header__navigation">
             <ul class="header__list">
                 <li class="header__list-item"><a href="#services" class="header__link">Услуги</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Продукция</a></li>
@@ -32,6 +38,7 @@
                 <li class="header__list-item"><a href="#" class="header__link">Контакты</a></li>
             </ul>
         </nav>
+
         <div class="button-container">
             <button class="button"><img src="./img/button/icon-measure.svg" alt="" class="button__icon">
             Заявка на замер</button>

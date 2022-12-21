@@ -21,6 +21,62 @@ $main-color: #ef7f04;
 
     font-family: 'Roboto', Arial, sans-serif;
 
+    &__burger {
+        display: none;
+        position: absolute;
+        left: 55px;
+        top: 45px;
+
+        width: 1px;
+        height: 1px;
+
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+
+        &-button {
+            display: none;
+            position: absolute;
+            left: 55px;
+            top: 32px;
+
+            width: 56px;
+            height: 35px;
+
+            cursor: pointer;
+        }
+
+        &-icon {
+            display: block;
+            position: absolute;
+            top: 14px;
+
+            width: 56px;
+            height: 7px;
+
+            background: $main-color;
+            border-radius: 2px;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+
+                width: 56px;
+                height: 7px;
+
+                background: $main-color;
+                border-radius: 2px;
+            }
+
+            &::before {
+                top: -14px;
+            }
+
+            &::after {
+                top: 14px;
+            }
+        }
+    }
+
     &__logo {
         margin: auto;
         width: 90px;
@@ -81,5 +137,66 @@ $main-color: #ef7f04;
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding-left: 155px;
+        padding-right: 55px;
+
+        width: 100%;
+        box-sizing: border-box;
+
+        &__burger {
+            display: block;
+    
+            &-button {
+                display: block;
+                z-index: 2;
+            }
+
+            &:checked ~ .header__navigation {
+                left: 0;
+            }
+        }
+
+        &__navigation {
+            position: absolute;
+            top: 0;
+            left: -150px;
+            z-index: 1;
+            padding-top: 100px;
+
+            width: 150px;
+            height: 100vh;
+            transition: all 1s ease;
+            background: #ffffff;
+            background-origin: content-box;
+            overflow: hidden;
+
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+    
+            width: auto;
+            height: 100%;
+        
+            &-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &__link::before {
+            display: none;
+        }
     }
 }
