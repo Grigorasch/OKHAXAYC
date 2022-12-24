@@ -22,7 +22,7 @@
   color: #ffffff;
 }
 .button__icon {
-  filter: url(/img/button/filter.svg#makeMeWhite);
+  filter: url(../img/button/filter.svg#makeMeWhite);
 }
 .button:hover {
   text-decoration: underline;

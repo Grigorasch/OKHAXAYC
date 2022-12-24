@@ -45,6 +45,7 @@
   row-gap: 100px;
   padding: 65px 0 55px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 .advantages-block__card {
   display: flex;
@@ -88,4 +89,10 @@
   height: 55px;
   font-size: 16px;
   line-height: 19px;
+}
+
+@media (max-width: 1220px) {
+  .advantages-block__card {
+    width: 42%;
+  }
 }

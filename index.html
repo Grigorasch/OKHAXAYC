@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/tabs.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/details.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
     <title>Окна хаус</title>
 </head>
 <body>
@@ -33,8 +34,8 @@
                 <li class="header__list-item"><a href="#services" class="header__link">Услуги</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Продукция</a></li>
                 <li class="header__list-item"><a href="#about" class="header__link">О компании</a></li>
-                <li class="header__list-item"><a href="#" class="header__link">Портфолио</a></li>
-                <li class="header__list-item"><a href="#" class="header__link">Вопрос-ответ</a></li>
+                <li class="header__list-item"><a href="#portfolio" class="header__link">Портфолио</a></li>
+                <li class="header__list-item"><a href="#answer" class="header__link">Вопрос-ответ</a></li>
                 <li class="header__list-item"><a href="#" class="header__link">Контакты</a></li>
             </ul>
         </nav>
@@ -72,8 +73,8 @@
             </div>
             <form action="" class="form">
                 <h2 class="form__heading">Вызвать замерщика на дом</h2>
-                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input" pattern="[А-Яа-яЁё]+" required>
-                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" class="form__input" pattern="(\+7|8)9\d{9}" required>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" class="form__input" pattern="[А-Яа-яЁё]+" title="Только символы русского алфавита" required>
+                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" class="form__input" pattern="(\+7|8)9\d{9}" title="Введите номер в формате +79ХХХХХХХХХ или 89ХХХХХХХХХ" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" class="form__input" required>
                 <input type="checkbox" id="accept" name="accept" class="form__checkbox form__checkbox_checked form__checkbox_focused" required>
                 <label for="accept" class="form__checkbox-label">Согласен на обработку персональных данных в соответствии с <a href="" target="_blank" class="form__link">политикой конфиденциальности</a></label>
@@ -135,7 +136,12 @@
                     </li>
                 </ul>
             </nav>
-            <div class="tabs__display"></div>
+            <div class="tabs__display">
+                <div class="tabs__display-logo"></div>
+                <div class="tabs__display-image">
+                    <img src="./img/main/about/about-background.png" alt="">
+                </div>
+            </div>
             <div class="advantages-block">
                 <div class="advantages-block__card">
                     <img src="./img/main/about/advantages-icon1.svg" alt="" class="advantages-block__image advantages-block_image_size1">
@@ -186,39 +192,39 @@
             </button>
         </section>
 
-        <section class="main-wrapper main-wrapper_portfolio">
+        <section class="main-wrapper main-wrapper_portfolio" id="portfolio">
             <h1 class="main-wrapper__heading">Портфолио</h1>
             <div class="portfolio__galery">
                 <img src="/img/main/portfolio/portfolio-image1.png" alt="Пример остекления комнаты" class="portfolio__image">
-                <img src="/img/main/portfolio/portfolio-image2.png" alt="Пример остекления комнаты" class="portfolio__image portfolio_image-size_stretching">
+                <img src="/img/main/portfolio/portfolio-image2.png" alt="Пример остекления комнаты" class="portfolio__image">
                 <img src="/img/main/portfolio/portfolio-image3.png" alt="Пример остекления комнаты" class="portfolio__image">
                 <img src="/img/main/portfolio/portfolio-image4.png" alt="Пример остекления комнаты" class="portfolio__image">
             </div>
         </section>
 
-        <section class="main-wrapper main-wrapper_answer">
+        <section class="main-wrapper main-wrapper_answer" id="answer">
             <h1 class="main-wrapper__heading">Вопрос-ответ</h1>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Сколько по времени занимает изготовление пластиковых окон?</summary>
                 <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, facilis. Provident ad esse eos cupiditate, vero ipsa odit minus deserunt libero dignissimos consequatur totam iusto voluptatibus perspiciatis ex nostrum voluptas.</p>
             </details>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Какие существуют способы оплаты?</summary>
                 <p class="details__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut non suscipit quas nesciunt dolorem laboriosam molestias dicta consectetur ipsa minus, rem deleniti quasi voluptatum nulla adipisci nam expedita dignissimos dolore?</p>
             </details>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Где я могу посмотреть образцы?</summary>
                 <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque nemo perferendis aut, sit similique possimus odit pariatur dolorem minima veritatis quaerat tempora maxime totam saepe debitis corporis excepturi autem.</p>
             </details>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Зачем вызывать замерщика? Я могу дать размеры</summary>
                 <p class="details__content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quo id consequuntur eligendi eum repellendus reprehenderit perspiciatis iusto impedit qui magnam at tenetur itaque ullam, quia modi architecto sed minima.</p>
             </details>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Хотелось бы отделать балкон. Поможете?</summary>
                 <p class="details__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nostrum rerum porro sapiente, voluptas nobis adipisci magnam nisi itaque. Possimus sapiente doloremque odit, eveniet aliquam esse ipsum quas itaque repellat?</p>
             </details>
-            <details class="details details_hover details_open">
+            <details class="details details_hover details_open" onclick="this.open=!this.open">
                 <summary class="details__summary">Мне надо нанимать грузчиков для подъема?</summary>
                 <p class="details__content">Нет, команда мастеров все сами аккуратно доставят и внесут.</p>
             </details>
