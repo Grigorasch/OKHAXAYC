@@ -57,6 +57,7 @@ $main-color: #ef7f04;
     padding: 65px 0 55px 20px;
 
     width: 100%;
+    box-sizing: border-box;
 
     &__card {
         display: flex;
@@ -112,5 +113,13 @@ $main-color: #ef7f04;
 
         font-size: 16px;
         line-height: 19px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .advantages-block {
+        &__card {
+            width: 42%;
+        }
     }
 }

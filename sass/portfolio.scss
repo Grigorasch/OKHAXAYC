@@ -18,9 +18,16 @@
 
         border-radius: 3px;
     }
+}
 
-    &_image-size_stretching {
-        object-fit: none;
-        object-position: -15px -10px;
+@media (max-width: 1200px) {
+    .portfolio {
+        &__galery {
+            width: 735px;
+        }
+
+        &__image:nth-child(n+4) {
+            display: none;
+        }
     }
 }

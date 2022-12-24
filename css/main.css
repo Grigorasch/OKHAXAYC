@@ -30,7 +30,7 @@
   flex-shrink: 0;
   width: 1219px;
   height: 562px;
-  background: url("/img/main/title/title-container-background1.png"), #333349;
+  background: url("../img/main/title/title-container-background1.png"), #333349;
   background-blend-mode: multiply;
 }
 .title__background-item:nth-child(2) {
@@ -38,7 +38,7 @@
   flex-shrink: 0;
   width: 702px;
   height: 562px;
-  background: url("/img/main/title/title-container-background2.png"), #333349;
+  background: url("../img/main/title/title-container-background2.png"), #333349;
   background-blend-mode: multiply;
 }
 .title__background-item:nth-child(2)::before {
@@ -58,7 +58,6 @@
   box-sizing: border-box;
   padding-top: 65px;
   width: 1200px;
-  overflow: hidden;
 }
 .main-wrapper__heading {
   margin-bottom: 45px;
@@ -89,5 +88,8 @@
   .title {
     justify-content: left;
     padding-left: 75px;
+  }
+  .main-wrapper {
+    width: 880px;
   }
 }

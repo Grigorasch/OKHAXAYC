@@ -46,7 +46,14 @@
 }
 .details_open[open] {
   height: auto;
+  background: #FFFFFF;
 }
 .details_open[open] > .details__summary::after {
-  transform: rotate(1980deg);
+  transform: rotate(5.5turn);
+}
+
+@media (max-width: 1200px) {
+  .details {
+    width: 800px;
+  }
 }
