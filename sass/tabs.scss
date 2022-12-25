@@ -89,14 +89,13 @@
         height: 460px;
 
         overflow: hidden;
-        // background: url(/img/logo.png) 50px 50px / auto 140px no-repeat, url(/img/main/about/about-background.png) right / auto 460px no-repeat, white;
         background: white;
         border-radius: 3px;
 
         &-logo {
             width: 50%;
             height: 100%;
-            background: url(/img/logo.png) 30px 45px / auto 140px no-repeat;
+            background: url(../img/logo.png) 30px 45px / auto 140px no-repeat;
         }
 
         &-image {
