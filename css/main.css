@@ -84,7 +84,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
   .title {
     justify-content: left;
     padding-left: 75px;
