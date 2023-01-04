@@ -58,7 +58,7 @@
   border-radius: 3px;
 }
 .form__checkbox-label::after {
-  content: url(/img/form/form__checkbox_checked.svg);
+  content: url(../img/form/form__checkbox_checked.svg);
   position: absolute;
   opacity: 0;
   left: -30px;
