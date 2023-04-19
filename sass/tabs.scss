@@ -1,0 +1,127 @@
+.tabs {
+    position: relative;
+    margin-bottom: 35px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 650px;
+    
+        border-radius: 3px;
+        list-style-type: none;
+
+        
+    }
+
+    &__radio {
+        z-index: -1;
+        margin: 0;
+        padding: 0;
+
+        width: 0;
+        height: 0;
+
+        &_checked {
+            &:checked+.tabs__label {
+                font-weight: 700;
+                color: #ffffff;
+                background: #ef7f04;
+            }
+
+            &:checked~.tabs__description {
+                // opacity: 1;
+                display: block;
+            }
+        }
+
+        &_focused {
+            &:focus-visible {
+                outline: none;
+            }
+
+            &:focus-visible+.tabs__label {
+                outline: 2px solid black;
+            }
+        }
+    }
+
+    &__label {
+        // box-sizing: border-box;
+        padding: 8px 25px;
+        cursor: pointer;
+
+        border-radius: 3px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #2f2f51;
+        transition: 0.2s;
+
+        &_hover {
+            &:hover {
+                // font-weight: 700;
+                color: #ffffff;
+                background: #ef7f04;
+            }
+        }
+    }
+
+    &__description {
+        position: absolute;
+        top: 305px;
+        left: -25px;
+
+        width: 305px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        display: none;
+    }
+
+    &__display {
+        display: flex;
+
+        width: 100%;
+        height: 460px;
+
+        overflow: hidden;
+        background: white;
+        border-radius: 3px;
+
+        &-logo {
+            width: 50%;
+            height: 100%;
+            background: url(../img/logo.png) 30px 45px / auto 140px no-repeat;
+        }
+
+        &-image {
+            display: flex;
+            justify-content: right;
+            overflow: hidden;
+
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .tabs {
+        &__description {
+            width: 280px;
+            left: 0;
+        }
+
+        &__display {
+            width: 880px;
+
+            &-image {
+                justify-content: center;
+            }
+        }
+    }
+}

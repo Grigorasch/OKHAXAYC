@@ -1,0 +1,125 @@
+$main-color: #ef7f04;
+
+.advanteges {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+    box-sizing: border-box;
+    width: 625px;
+
+    &__heading {
+        margin-bottom: 20px;
+        width: 460px;
+
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 42.19px;
+        color: white;
+
+        &-brand {
+            display: block;
+
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28.13px;
+            color: $main-color;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__card {
+        margin-right: 30px;
+        width: 175px;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: white;
+
+        &-image {
+            position: relative;
+            left: -15px;
+            flex-basis: 100px;
+        }
+    }
+}
+
+.advantages-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    padding: 65px 0 55px 20px;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    &__card {
+        display: flex;
+
+        width: 33%;
+        height: 115px;
+    }
+
+    &__image {
+        flex-basis: 150px;
+        margin-top: 10px;
+    }
+
+    &__wrapper {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    &__heading {
+        font-weight: 700;
+        line-height: 36px;
+        color: #2f2f51;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    &_image_size1 {
+        height: 81px;
+    }
+
+    &_image_size2 {
+        height: 96px;
+    }
+    
+    &_image_size3 {
+        height: 84px;
+    }
+    
+    &_image_size4 {
+        height: 101px;
+    }
+
+    &__button {
+        margin-bottom: 87px;
+        
+        width: 310px;
+        height: 55px;
+
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .advantages-block {
+        &__card {
+            width: 42%;
+        }
+    }
+}

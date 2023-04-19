@@ -1,0 +1,44 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.2s;
+  background: #ef7f04;
+  border: 2px solid #ef7f04;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+}
+.button__icon {
+  filter: url("data:image/svg+xml;utf8,<svg version='1.1' baseProfile='full' xmlns='http://www.w3.org/2000/svg'><filter id='makeMeWhite'><feColorMatrix in='SourceGraphic' type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/></filter></svg>#makeMeWhite");
+}
+.button:hover {
+  text-decoration: underline;
+}
+.button:active, .button :active:hover {
+  background: #ffffff;
+  color: #ef7f04;
+}
+.button:active .button__icon, .button :active:hover .button__icon {
+  filter: none;
+}
+
+.button_color_blue {
+  background: #424268;
+  border: 2px solid #424268;
+}
+.button_color_blue:active, .button_color_blue :active:hover {
+  color: #424268;
+}
